@@ -12,6 +12,8 @@
 # ...
 ##'Number 8, your order is ready.'
 
+for num in range(1,9):
+    print('Number ' + str(num) + ', your order is ready.')
 
 #2 Now Serving
 #Create a while loop that will print the following message:
@@ -22,6 +24,8 @@
 # ...
 # 'Now serving number 5.'
 
+for num in range(1,6):
+    print('Now serving number ' + str(num))
 
 #3 3 is a Magic Number
 #Create a while loop that will generate a multiplication table for the number 3 and print out the following:
@@ -34,14 +38,25 @@
 # ...
 # 9 x 3 = 27
 
+i = 0
+while i < 9:
+    i +=1
+    print(str(i) + ' x ' + str(3) + ' = ' + str(i * 3))
 
 #4. Uber This!
 # Declare a variable named cars and assign it a list of 5 of your favorite car brands. Next create a for loop that will iterate through the cars list and prints the following: 'My next car will be a red x.' Where x represents each item in the list.
 
+cars = ['Toyota', 'Tesla', 'Porshe', 'Lamborghini', 'Lexus']
+for i in range(len(cars)):
+    print('My next car will be a red ' + str(cars[i]) + '.')
 
 #5 Uber This Again
 #Print each item in the above cars list using a while loop.
 
+i = 0
+while i < len(cars):
+    print(cars[i])
+    i + 1
     
 #6  No More Tears
 # Create a for loop that will iterate through the cyber attacks list and prints the following: 
