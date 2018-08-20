@@ -85,6 +85,12 @@ print(even_list)
 
 #i.e a number list of 10 will have a sum total of 45
 
+def add_up(num):
+    sum = 0
+    for number in range(num):
+        sum += number
+    print(sum)
+add_up(10)
 
 #9 East Coast vs West Coast - A Hip Hop Rivalry
 #The East Coast - West Coast hip hop rivalry was a feud between artist and fans of the East Coast hip hop and West Coast hip hop scenes from the mid to last 1990s. 
@@ -93,15 +99,35 @@ print(even_list)
 
 rappers = ['Tupac', 'Biggie', 'Ice Cube', 'Nas', 'Snoop', '50 Cent', 'Nate Dogg', 'Wu Tang Clan', 'Kendrick Lamar']
 
+weessst_siiide = []
+east_side = []
+def rivalry(list):
+    for rapper in list:
+        if list.index(rapper)%2 == 0:
+            weessst_siiide.append(rapper)
+        else:
+            east_side.append(rapper)
+rivalry(rappers)
+print(weessst_siiide)
+print(east_side)
+
 #10 Breaking Up is Easy
 #Create a for loop that will iterate through 10 even numbers (starting from 0) and stop printing at 10.
 
+for number in range(0, 20, 2):
+    if number == 10:
+        break
+    print(number)
 
 #11 Zip Codes
 #Create a for loop that will iterate through the zip codes list below and print all the zip codes except for 96822.
 
 zip_codes = [90001,90002,90003,90004,90005,96822,90007,90008,90010,90011,90012,90013,90014,90015, 90016,90017,90018,90019]
 
+for code in zip_codes:
+    if code == 96822:
+        continue
+    print(code)
 
 #12 Fizz Buzz!
 #The classic programming task is back! Use a for loop that will iterate through 100 numbers starting from 1. Your job is to program the following:
@@ -123,7 +149,28 @@ zip_codes = [90001,90002,90003,90004,90005,96822,90007,90008,90010,90011,90012,9
 # 14
 # Fizz Buzz
 
+for num in range(1, 101):
+    if num % 5 == 0 and num % 3 == 0:
+        print('Fizz Buzz')
+    elif num % 3 == 0:
+        print('Fizz')
+    elif num % 5 == 0:
+        print('Buzz')
+    else:
+        print(str(num))
 
 #13 Fizz Buzz Again 
 #Do the same thing again using a while loop.
+
+count = 0
+while count < 101:
+    if count % 5 == 0 and count % 3 == 0:
+        print('Fizz Buzz')
+    elif count % 3 == 0:
+        print('Fizz')
+    elif count % 5 == 0:
+        print('Buzz')
+    else:
+        print(count)
+    count +=1
 
